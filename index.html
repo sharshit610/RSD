@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Scholar's Day 2025</title>
+    <!-- Imports Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Google Font link for EB Garamond -->
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Configures fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        /* CHANGE: Set the default 'sans' font to EB Garamond */
+                        sans: ['"EB Garamond"', 'Georgia', 'serif'],
+                        /* Set the serif font to EB Garamond */
+                        serif: ['"EB Garamond"', 'Georgia', 'serif'],
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        /* This style ensures that the hidden sections are not visible */
+        .page-content.hidden {
+            display: none;
+        }
+
+        /* --- FONT SIZE CONTROLS --- */
+        :root {
+            /* Change these values to control font sizes everywhere.
+              1rem = 16px (default browser size)
+              1.1rem = 17.6px (a good size for body text)
+              1.25rem = 20px 
+            */
+            /* --font-size-h1 variable removed to restore original title size -- */
+            --font-size-h2: 1.7rem;    /* Section headings (was 3xl) */
+            --font-size-h3: 1.3rem;     /* For sub-headings like "Important Dates" */
+            --font-size-intro: 1.25rem;  /* For the main welcome paragraph */
+            --font-size-normal: 1.2rem;   /* For most paragraph text and lists */
+            --font-size-nav: 1rem;   /* For navigation links (0.875rem = 14px) */
+        }
+        
+        /* Apply the new font sizes */
+        .page-content p, 
+        .page-content ul,
+        .page-content table,
+        .page-content li a { /* Targets links inside lists, like in Past Conferences */
+            font-size: var(--font-size-normal);
+            line-height: 1.7;
+        }
+        .page-content .welcome-text p {
+            font-size: var(--font-size-intro);
+            line-height: 1.8;
+        }
+        .page-content h3 {
+            font-size: var(--font-size-h3);
+        }
+        .nav-link {
+            font-size: var(--font-size-nav);
+        }
+        /* -- h1 rule removed to restore original title size -- */
+        .page-content h2 {
+            font-size: var(--font-size-h2);
+        }
+
+        /* --- Page Load Animation (from style.css) --- */
+        .fade-in-content {
+            animation: fadeIn 0.7s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body class="font-sans bg-white text-black">
+
+    <!-- Main Container -->
+    <div class="max-w-6xl mx-auto p-6 md:p-10">
+
+        <!-- Header Section -->
+        <header class="mb-4">
+            <!-- Flex container for title and subtitle -->
+            <div class="flex flex-col md:flex-row justify-between md:items-start">
+                <!-- Main Title -->
+                <div class="md:w-2/3">
+                    <h1 class="font-serif text-3xl md:text-4xl font-bold text-red-900 leading-tight">
+                        Research Scholars' Day 2026
+                    </h1>
+                </div>
+                <!-- Subtitle / Location -->
+                <div class="md:w-1/3 mt-2 md:mt-0 md:text-right">
+                    <p class="text-black font-bold">
+                        Indian Institute of Technology Kanpur
+                    </p>
+                    <p class="text-black">
+                        February 13 - 14, 2026
+                    </p>
+                </div>
+            </div>
+        </header>
+
+        <!-- Navigation Bar -->
+        <nav class="border-t border-b border-gray-300 my-5">
+            <ul class="flex flex-wrap space-x-6 py-3" id="navigation-links">
+                <!-- Navigation Links -->
+                <li>
+                    <!-- Use data-target to tell our script which section to show -->
+                    <a href="#home" data-target="home" class="nav-link block py-1 font-medium uppercase text-blue-700">Home</a>
+                </li>
+                <li>
+                    <a href="#call_for_papers" data-target="call_for_papers" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Call For Papers</a>
+                </li>
+                <li>
+                    <a href="#speakers" data-target="speakers" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Speakers</a>
+                </li>
+                <li>
+                    <a href="#submission" data-target="submission" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Submission</a>
+                </li>
+                <li>
+                    <a href="#registration" data-target="registration" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Registration</a>
+                </li>
+                <li>
+                    <a href="#past_conferences" data-target="past_conferences" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Past Conferences</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content Area -->
+        <main>
+            
+            <!-- ====== HOME PAGE CONTENT ====== -->
+            <div id="home-content" class="page-content">
+                <!-- Welcome Text -->
+                <section class="mb-8 welcome-text">
+                    <p class="leading-relaxed">
+                        The <strong class="font-semibold text-black">Department of Economic Sciences</strong> at the <strong class="font-semibold text-black">Indian Institute of Technology Kanpur</strong> will organize its Research Scholars' Day 2026. We welcome you to attend the conference, and present your research.
+                    </p>
+                </section>
+                <!-- Call for Papers Section - This has been moved to its own page -->
+            </div>
+            
+            <!-- ====== CALL FOR PAPERS PAGE CONTENT ====== -->
+            <div id="call_for_papers-content" class="page-content hidden">
+                <section>
+                    <h2 class="font-serif font-bold text-red-900 border-b-2 border-red-800 pb-2 mb-6">Call For Papers</h2>
+                    <p class="leading-relaxed mb-6">
+                        We invite submissions of high-quality research papers in all areas of economics and development. Both theoretical and empirical papers are welcome. Please see the submission guidelines for more details.
+                    </p>
+                    <h3 class="font-semibold text-black mb-3">Important Dates</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                        <li><strong>Paper Submission Deadline:</strong> November 30, 2025</li>
+                        <li><strong>Notification of Acceptance:</strong> January 5, 2026</li>
+                        <li><strong>Registration Deadline:</strong> January 15, 2026</li>
+                        <li><strong>Conference Dates:</strong> February 13 - 14, 2026</li>
+                    </ul>
+                </section>
+            </div>
+
+            <!-- ====== SUBMISSION PAGE CONTENT ====== -->
+            <div id="submission-content" class="page-content hidden">
+                <section>
+                    <h2 class="font-serif font-bold text-red-900 border-b-2 border-red-800 pb-2 mb-6">Submission Guidelines</h2>
+                    <p class="leading-relaxed mb-6">
+                        Authors are invited to submit their research papers for presentation at the conference. All submissions must be original and unpublished work. Papers should be submitted in PDF format via the online submission portal.
+                    </p>
+                    <h3 class="font-semibold text-black mb-3">Paper Format</h3>
+                    <ul class="list-disc list-inside space-y-2 mb-6">
+                        <li>Full paper without author details (consisting of title, abstract within 250 words, keywords, main text, figures, tables, references, etc.).</li>
+                        <li>Title page (title, author names and affiliations, corresponding author with email ID and contact number).</li>
+                        <li>Use Times New Roman 12 font size, 1.5 space, and 1-inch (2.5 cm) margin all around, number all pages.</li>
+                        <li>The maximum length of the paper should not exceed 9000 words (including all tables, appendices and references).</li>
+                    </ul>
+                    <h3 class="font-semibold text-black mb-3">Important Dates</h3>
+                    <ul class="list-disc list-inside space-y-2 mb-6">
+                        <li><strong>Paper Submission Deadline:</strong> November 30, 2025</li>
+                        <li><strong>Notification of Acceptance:</strong> January 5, 2026</li>
+                    </ul>
+                    <a href="#" class="inline-block bg-red-800 text-white font-bold py-3 px-6 rounded-md hover:bg-red-900 transition-colors">
+                        Go to Submission Portal
+                    </a>
+                </section>
+            </div>
+            
+            <!-- ====== SPEAKERS PAGE CONTENT ====== -->
+            <div id="speakers-content" class="page-content hidden">
+                <section>
+                    <h2 class="font-serif font-bold text-red-900 border-b-2 border-red-800 pb-2 mb-6">Keynote Speakers</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                        <!-- Speaker 1 -->
+                        <div class="flex flex-col items-center text-center">
+                            <img src="https://placehold.co/200x200/e2e8f0/64748b?text=Speaker+Photo" alt="Speaker Photo" class="w-48 h-48 rounded-full object-cover mb-4 shadow-md">
+                            <h3 class="font-semibold text-black">Prof. Tarun Jain</h3>
+                            <p class="text-red-800 font-medium">Indian Institute of Management Ahmedabad</p>
+                            <p class="mt-2">
+                            Prof. Tarun Jain is the Reserve Bank of India Chair Professor in Economics at the Indian Institute of Management Ahmedabad.
+                            </p>
+                        </div>
+                        <!-- Speaker 2 -->
+                        <div class="flex flex-col items-center text-center">
+                            <img src="https://placehold.co/200x200/e2e8f0/64748b?text=Speaker+Photo" alt="Speaker Photo" class="w-48 h-48 rounded-full object-cover mb-4 shadow-md">
+                            <h3 class="font-semibold text-black">Prof. Mausumi Das</h3>
+                            <p class="text-red-800 font-medium">Delhi School of Economics</p>
+                            <p class="mt-2">
+                            Prof. Mausumi Das is a leading economist specializing in development and macroeconomics.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- ====== REGISTRATION PAGE CONTENT ====== -->
+            <div id="registration-content" class="page-content hidden">
+                <section>
+                    <h2 class="font-serif font-bold text-red-900 border-b-2 border-red-800 pb-2 mb-6">Registration</h2>
+                    <p class="leading-relaxed mb-6">
+                        Registration is required for all conference participants. The registration fee includes access to all sessions, conference materials, coffee breaks, and the conference dinner.
+                    </p>
+                    <h3 class="font-semibold text-black mb-3">Registration Fees</h3>
+                    <div class="overflow-x-auto mb-6">
+                        
+                    </div>
+                    <h3 class="font-semibold text-black mb-3">Registration Deadline</h3>
+                    <p class="mb-6">
+                        The deadline for all registrations is <strong>January 15, 2026</strong>.
+                    </p>
+                    <a href="#" class="inline-block bg-red-800 text-white font-bold py-3 px-6 rounded-md hover:bg-red-900 transition-colors">
+                        Register Now
+                    </a>
+                </section>
+            </div>
+            
+            <!-- ====== PAST CONFERENCES PAGE CONTENT ====== -->
+            <div id="past_conferences-content" class="page-content hidden">
+                <section>
+                    <h2 class="font-serif font-bold text-red-900 border-b-2 border-red-800 pb-2 mb-6">Past Conferences</h2>
+                    <p class="leading-relaxed mb-6">
+                        Browse the archives from our previous conferences:
+                    </p>
+                    <ul class="space-y-3">
+                        <li>
+                            <a href="#" class="text-blue-700 hover:underline font-medium">Research Scholars' Day (2024)</a>
+                        </li>
+                        <li>
+                            <a href="#" class="text-blue-700 hover:underline font-medium">Research Scholars' Day (2023)</a>
+                        </li>
+                    </ul>
+                </section>
+            </div>
+
+        </main>
+
+        <!-- Footer -->
+        <!-- Footer section removed as requested -->
+
+    </div>
+
+    <!-- JavaScript for Page Navigation -->
+    <script>
+        // Wait for the DOM to be fully loaded before running the script
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Get all navigation links and page content sections
+            const navLinks = document.querySelectorAll('.nav-link');
+            const pageContents = document.querySelectorAll('.page-content');
+
+            // Function to handle link clicks
+            function showPage(targetId) {
+                // Hide all page content sections and remove animation class
+                pageContents.forEach(content => {
+                    content.classList.add('hidden');
+                    content.classList.remove('fade-in-content'); // Remove animation class
+                });
+                
+                // Show the target page content and add animation class
+                const targetContent = document.getElementById(targetId + '-content');
+                if (targetContent) {
+                    targetContent.classList.remove('hidden');
+                    targetContent.classList.add('fade-in-content'); // Add animation class
+                }
+                
+                // Update active link styling
+                navLinks.forEach(navLink => {
+                    navLink.classList.remove('text-blue-700'); // Remove active class from all
+                    navLink.classList.add('text-black');
+                    if (navLink.getAttribute('data-target') === targetId) {
+                        navLink.classList.add('text-blue-700'); // Add active class to clicked link
+                        navLink.classList.remove('text-black');
+                    }
+                });
+
+                // Scroll to the top of the page on navigation
+                window.scrollTo(0, 0);
+            }
+
+            // Add click event listeners to all navigation links
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault(); // Stop the browser from following the href
+                    const targetId = link.getAttribute('data-target');
+                    showPage(targetId);
+                    // Update the URL hash
+                    window.location.hash = targetId;
+                });
+            });
+
+            // Check for a hash in the URL on page load
+            let initialPage = 'home';
+            if (window.location.hash) {
+                // Get the target ID from the hash (e.g., #submission -> submission)
+                const hashId = window.location.hash.substring(1);
+                // Check if a content section for this hash exists
+                if (document.getElementById(hashId + '-content')) {
+                    initialPage = hashId;
+                }
+            }
+            
+            // Show the correct page (either from hash or default to 'home')
+            showPage(initialPage);
+        });
+    </script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
