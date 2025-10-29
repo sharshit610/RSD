@@ -125,19 +125,19 @@
                     <a href="#home" data-target="home" class="nav-link block py-1 font-medium uppercase text-blue-700">Home</a>
                 </li>
                 <li>
-                    <a href="#call_for_papers" data-target="call_for_papers" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Call For Papers</a>
+                    <a href="#call_for_papers" data-target="call_for_papers" class="nav-link block py-1 font-medium uppercase text-black">Call For Papers</a>
                 </li>
                 <li>
-                    <a href="#speakers" data-target="speakers" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Speakers</a>
+                    <a href="#speakers" data-target="speakers" class="nav-link block py-1 font-medium uppercase text-black">Speakers</a>
                 </li>
                 <li>
-                    <a href="#submission" data-target="submission" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Submission</a>
+                    <a href="#submission" data-target="submission" class="nav-link block py-1 font-medium uppercase text-black">Submission</a>
                 </li>
                 <li>
-                    <a href="#registration" data-target="registration" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Registration</a>
+                    <a href="#registration" data-target="registration" class="nav-link block py-1 font-medium uppercase text-black">Registration</a>
                 </li>
                 <li>
-                    <a href="#past_conferences" data-target="past_conferences" class="nav-link block py-1 font-medium uppercase text-black hover:text-blue-700">Past Conferences</a>
+                    <a href="#past_conferences" data-target="past_conferences" class="nav-link block py-1 font-medium uppercase text-black">Past Conferences</a>
                 </li>
             </ul>
         </nav>
@@ -297,10 +297,10 @@
                 
                 // Update active link styling
                 navLinks.forEach(navLink => {
-                    navLink.classList.remove('text-blue-700'); // Remove active class from all
+                    navLink.classList.remove('text-red-900'); // Remove active class from all
                     navLink.classList.add('text-black');
                     if (navLink.getAttribute('data-target') === targetId) {
-                        navLink.classList.add('text-blue-700'); // Add active class to clicked link
+                        navLink.classList.add('text-red-900'); // Add active class to clicked link
                         navLink.classList.remove('text-black');
                     }
                 });
@@ -338,6 +338,7 @@
 
 </body>
 </html>
+
 
 
 
