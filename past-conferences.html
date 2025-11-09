@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Past Conference Archives</title>
+
+    <script src="https://cdn.tailwindcss.com?play"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"EB Garamond"', 'Georgia', 'serif'],
+              serif: ['"EB Garamond"', 'Georgia', 'serif'],
+            },
+          },
+        },
+      }
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400..700&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --font-size-h2: 1.7rem;
+            --font-size-h3: 1.3rem;
+            --font-size-intro: 1.25rem;
+            --font-size-normal: 1.2rem;
+            --font-size-nav: 1.08rem;
+        }
+        @media (max-width: 640px) {
+            :root {
+                --font-size-h2: 1.5rem;
+                --font-size-h3: 1.15rem;
+                --font-size-intro: 1.1rem;
+                --font-size-normal: 1.1rem;
+            }
+            .accordion-content-h3 { font-size: 1.1rem; }
+            .accordion-gallery-h3 { font-size: 1.2rem; }
+            .accordion-toggle { font-size: 1rem; }
+        }
+        .page-content p { font-size: var(--font-size-normal); line-height: 1.7; text-align: justify; }
+        .page-content ul, .page-content table, .page-content li a { font-size: var(--font-size-normal); line-height: 1.7; }
+        .page-content h3 { font-size: var(--font-size-h3); }
+        .page-content h2 { font-size: var(--font-size-h2); }
+        .accordion-content-h3 { font-size: 1.3rem; font-weight: 600; color: #5f1818; margin-bottom: 0.4rem; }
+        .page-content .accordion-gallery-h3 { font-size: 1.3rem; font-weight: 550; color: #000000; margin-bottom: 1rem; }
+        .accordion-panel { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.4s ease-in-out; }
+        .accordion-panel.open { grid-template-rows: 1fr; }
+        .accordion-panel > div { overflow: hidden; min-height: 0; }
+        .icon-wrapper.open { transform: rotate(45deg); }
+        .accordion-toggle::after { content: ''; position: absolute; bottom: 0; left: 50%; transform: translateX(-50%); width: 33.3333%; height: 2px; background-color: #450a0a; }
+
+        body {
+            overflow-y: scroll;
+            }
+    </style>
+</head>
+
+
+<body class="font-sans bg-white text-black overflow-x-hidden">
+
+    <div class="max-w-6xl mx-auto p-4 sm:p-6 md:p-10">
+
+        <header class="mb-10"> <div class="flex flex-col md:flex-row justify-between md:items-start gap-2">
+                
+                <div class="md:w-2/3">
+                    <h1 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold text-red-900 leading-tight">
+                        Research Scholars' Day 2026
+                    </h1>
+                    <p class="text-black font-[600] text-red-900 sm:text-lg">
+                    February 13-14, 2026
+                    </p>
+                </div>
+
+                <div class="md:w-1/3 mt-1 md:mt-0">
+                    <div class="flex justify-start md:justify-end items-center gap-4">
+                        <div class="text-left md:text-right flex-shrink-0">
+                            <p class="text-black font-[570] text-base sm:text-lg">
+                                Department of Economic Sciences
+                            </p>
+                            <p class="text-black font-[570] text-base sm:text-lg">
+                                Indian Institute of Technology Kanpur
+                            </p>
+                        </div>
+                        <div>
+                            <img src="logo.png" alt="IIT Kanpur Logo" class="h-18 w-auto">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <main class="page-content">
+            <section>
+                    <h2 class="font-serif font-[600] text-red-900 border-b-2 border-red-800 pb-2 mb-6">Past Conferences</h2>
+                    
+                    <div class="h-6"></div>
+                    
+                    <div class="space-y-3">
+
+                        <div>
+                            <button class="accordion-toggle flex justify-between items-center w-full p-4 font-[500] text-red-950 
+                                         border-l-2 border-b-2 border-black rounded-bl-md
+                                         hover:bg-red-50 transition-colors duration-200
+                                         text-[1.2rem] sm:text-[1.35rem]"> <span>Research Scholars' Day (2025)</span>
+                                
+                                <span class="icon-wrapper transition-transform duration-300 ease-in-out">
+                                    <svg class="plus-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4"></path></svg>
+                                </span>
+                            </button>
+                            
+                            <div class="accordion-panel">
+                                <div> <div class="p-4 md:p-6">
+                                
+                                    <a href="program_2025.pdf" target="_blank" class="accordion-content-h3 hover:underline inline-block mb-3">
+                                        Detailed Program
+                                    </a>
+
+                                    <h3 class="accordion-gallery-h3">Photo Gallery</h3>
+                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                                        <a href="2025_1.jpg" class="glightbox" data-gallery="gallery2025">
+                                            <img src="2025_1.jpg" loading="lazy" alt="RSD 2024 Photo 2" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2025_2.jpg" class="glightbox" data-gallery="gallery2025">
+                                            <img src="2025_2.jpg" loading="lazy" alt="RSD 2024 Photo 3" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2025_3.jpg" class="glightbox" data-gallery="gallery2025">
+                                            <img src="2025_3.jpg" loading="lazy" alt="RSD 2024 Photo 4" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2025_4.jpg" class="glightbox" data-gallery="gallery2025">
+                                            <img src="2025_4.jpg" loading="lazy" alt="RSD 2024 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2025_5.jpg" class="glightbox" data-gallery="gallery2025">
+                                            <img src="2025_5.jpg" loading="lazy" alt="RSD 2024 Photo 5" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+
+                        <div class="mt-3">
+                            <button class="accordion-toggle flex justify-between items-center w-full p-4 font-[500] text-red-950 
+                                         border-l-2 border-b-2 border-black rounded-bl-md
+                                         hover:bg-red-50 transition-colors duration-200
+                                         text-[1.2rem] sm:text-[1.35rem]"> <span>Research Scholars' Day (2024)</span>
+                                
+                                <span class="icon-wrapper transition-transform duration-300 ease-in-out">
+                                    <svg class="plus-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4"></path></svg>
+                                </span>
+                            </button>
+                            
+                            <div class="accordion-panel">
+                            <div> <div class="p-4 md:p-6">
+                            
+                                <a href="program_2024.pdf" target="_blank" class="accordion-content-h3 hover:underline inline-block mb-3">
+                                    Detailed Program
+                                </a>
+
+                                <h3 class="accordion-gallery-h3">Photo Gallery</h3>
+                                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                                    
+                                    <a href="2024_1.jpeg" class="glightbox col-span-2 md:col-span-1 md:row-span-2" data-gallery="gallery2024">
+                                        <img src="2024_1.jpeg" alt="RSD 2023 Photo 1" class="w-full h-full rounded-md shadow-md object-cover">
+                                    </a>
+                                    
+                                    <a href="2024_2.jpeg" class="glightbox" data-gallery="gallery2024">
+                                        <img src="2024_2.jpeg" alt="RSD 2023 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                    </a>
+                                    <a href="2024_3.jpeg" class="glightbox" data-gallery="gallery2024">
+                                        <img src="2024_3.jpeg" alt="RSD 2023 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                    </a>
+                                    <a href="2024_4.jpeg" class="glightbox" data-gallery="gallery2024">
+                                        <img src="2024_4.jpeg" alt="RSD 2023 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                    </a>
+                                    
+                                    <a href="2024_5.jpeg" class="glightbox col-span-2 md:col-span-3" data-gallery="gallery2024">
+                                        <img src="2024_5.jpeg" alt="RSD 2023 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                    </a>
+                                    
+                                    <a href="2024_6.jpeg" class="glightbox" data-gallery="gallery2024">
+                                        <img src="2024_6.jpeg" alt="RSD 2023 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                    </a>
+                                    <a href="2024_7.jpeg" class="glightbox" data-gallery="gallery2024">
+                                        <img src="2024_7.jpeg" alt="RSD 2023 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                    </a>
+                                    <a href="2024_8.jpeg" class="glightbox" data-gallery="gallery2024">
+                                        <img src="2024_8.jpeg" alt="RSD 2023 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                    </a>
+                                    <a href="2024_9.jpeg" class="glightbox" data-gallery="gallery2024">
+                                        <img src="2024_9.jpeg" alt="RSD 2023 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                    </a>
+                                    <a href="2024_10.jpeg" class="glightbox" data-gallery="gallery2024">
+                                        <img src="2024_10.jpeg" alt="RSD 2023 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
+                        </div>
+                        </div>
+                        <div class="mt-3">
+                            <button class="accordion-toggle flex justify-between items-center w-full p-4 font-[500] text-red-950 
+                                         border-l-2 border-b-2 border-black rounded-bl-md
+                                         hover:bg-red-50 transition-colors duration-200
+                                         text-[1.2rem] sm:text-[1.35rem]"> <span>Research Scholars' Day (2023)</span>
+                                
+                                <span class="icon-wrapper transition-transform duration-300 ease-in-out">
+                                    <svg class="plus-icon w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M12 4v16m8-8H4"></path></svg>
+                                </span>
+                            </button>
+                            
+                            <div class="accordion-panel">
+                                <div> <div class="p-4 md:p-6">
+                                
+                                    <a href="program_2023.pdf" target="_blank" class="accordion-content-h3 hover:underline inline-block mb-3">
+                                        Detailed Program
+                                    </a>
+
+                                    <h3 class="accordion-gallery-h3">Photo Gallery</h3>
+                                    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
+                                        
+                                        <a href="2023_1.jpeg" class="glightbox col-span-2 md:col-span-1 md:row-span-2" data-gallery="gallery2023">
+                                            <img src="2023_1.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-full rounded-md shadow-md object-cover">
+                                        </a>
+                                        
+                                        <a href="2023_2.jpeg" class="glightbox" data-gallery="gallery2023">
+                                            <img src="2023_2.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2023_3.jpeg" class="glightbox" data-gallery="gallery2023">
+                                            <img src="2023_3.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2023_4.jpeg" class="glightbox" data-gallery="gallery2023">
+                                            <img src="2023_4.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        
+                                        <a href="2023_11.jpeg" class="glightbox col-span-2 md:col-span-3" data-gallery="gallery2023">
+                                            <img src="2023_11.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        
+                                        <a href="2023_5.jpeg" class="glightbox" data-gallery="gallery2023">
+                                            <img src="2023_5.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2023_6.jpeg" class="glightbox" data-gallery="gallery2023">
+                                            <img src="2023_6.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2023_7.jpeg" class="glightbox" data-gallery="gallery2023">
+                                            <img src="2023_7.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2023_8.jpeg" class="glightbox" data-gallery="gallery2023">
+                                            <img src="2023_8.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2023_9.jpeg" class="glightbox" data-gallery="gallery2023">
+                                            <img src="2023_9.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                        <a href="2023_10.jpeg" class="glightbox" data-gallery="gallery2023">
+                                            <img src="2023_10.jpeg" loading="lazy" alt="RSD 2022 Photo 1" class="w-full h-auto rounded-md shadow-md object-cover">
+                                        </a>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        </div>
+                        
+                    </div>
+                </section>
+        </main>
+
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            
+            // Script for GLightbox
+            GLightbox({ loop: true });
+
+            // Script for Accordions
+            const accordionToggles = document.querySelectorAll('.accordion-toggle');
+            accordionToggles.forEach(button => {
+                button.setAttribute('aria-expanded', 'false');
+                button.addEventListener('click', () => {
+                    const panel = button.nextElementSibling;
+                    const iconWrapper = button.querySelector('.icon-wrapper');
+                    if (panel) {
+                        panel.classList.toggle('open');
+                        const isOpen = panel.classList.contains('open');
+                        if (iconWrapper) {
+                            iconWrapper.classList.toggle('open', isOpen);
+                        }
+                        button.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+                    }
+                });
+            });
+        });
+    </SCript>
+
+</body>
+</html>
